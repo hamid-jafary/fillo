@@ -1,0 +1,56 @@
+header {
+  background-color: $introbg;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  font-family:$font-titels;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 0 10px;
+      a {
+        display: inline-block;
+      }
+      a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        margin-top: 5px;
+        background: rgb(243, 115, 115);
+        transition: width 0.3s;
+      }
+      a:hover {
+        color: rgb(141, 231, 235);
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  a {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  img {
+    width: 80px;
+    height: 60px;
+  }
+  @include br(medium) {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    ul {
+      align-content: center;
+    }
+    img {
+      width: 150px;
+
+    }
+  }
+}

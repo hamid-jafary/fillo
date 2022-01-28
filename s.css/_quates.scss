@@ -1,0 +1,62 @@
+.quates {
+  padding: 20px 40px 240px;
+  background-color: $mainbg;
+  display: flex;
+  justify-content: center;
+  font-family: $font-titels;
+  &_grid {
+    display: grid;
+    row-gap: 40px;
+    z-index: 1;
+    @include br(larg) {
+      grid-template-columns: auto auto auto;
+      gap: 40px;
+      padding: 20px 80px;
+    }
+  }
+}
+.quate {
+  position: relative;
+  &:first-child::before {
+    content: "";
+    background-image: url(/images/bg-quotes.png);
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    background-repeat: no-repeat;
+    top: -30px;
+    left: -12px;
+    z-index: -1;
+  }
+  background-color: $testbg;
+  color: #ffffff;
+  padding: 30px 24px 24px 24px;
+  max-width: 600px;
+  &_text {
+    font-size: 0.9em;
+    text-align: justify;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+}
+.quate_auter {
+  display: flex;
+  &_image {
+    img {
+      border-radius: 50%;
+      width: 40px;
+      height: auto;
+    }
+  }
+  &_row {
+    padding-left: 15px;
+
+    &_name {
+      font-size: 1em;
+      font-weight: 700;
+    }
+    &_title {
+      font-size: 0.8em;
+    }
+  }
+}

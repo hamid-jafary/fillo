@@ -1,0 +1,102 @@
+.footer {
+  background-color: $footerbg;
+  color: #fff;
+  padding-top: 210px;
+  font-family: $font-body;
+  letter-spacing: 1px;
+  @include br (medium){
+    padding-top: 100px;
+  }
+  .container {
+    padding: 45px 45px;
+  }
+
+  &__lg {
+    @include br(medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+  }
+
+  &__logo {
+    img {
+      padding-left: 15px;
+    }
+  }
+
+  &__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    img {
+      width: 25px;
+      height: 25px;
+      margin-right: 20px;
+    }
+  }
+
+  &__phone {
+    margin-top: 30px;
+    div a {
+      display: flex;
+      align-items: center;
+      max-width: 200px;
+      color: #fff;
+      margin-bottom: 10px;
+      &:hover {
+        color: aqua;
+        text-decoration: underline;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+    img {
+      width: 30px;
+    }
+    img.mail {
+      width: 25px;
+    }
+  }
+
+  &__information {
+    &__links1, &__links2  {
+      margin-top: 30px;
+      a {
+        display: block;
+        color: #fff;
+        padding-top: 10px;
+        font-size: 1.1rem;
+        &:hover{
+          text-decoration: underline;
+
+        }
+      }
+    }
+   
+  }
+
+  &__social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 30px;
+      background-color: aqua;
+      border: none;
+      outline: none;
+      border-radius: 15px;
+      padding: 2px;
+      margin: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

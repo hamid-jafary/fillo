@@ -1,0 +1,84 @@
+.signes-me {
+  padding: 100px 20px;
+  width: 100%;
+  background-color: $mainbg;
+  display: flex;
+  justify-content: center;
+  position:absolute;
+  background-color: transparent;
+  font-family: $font-body;
+  letter-spacing: 1px;
+  transform: translateY(-285px);
+  @include br(medium){
+    transform: translateY(-250px);
+  }
+}
+
+.sign-up {
+  max-width: 700px;
+  background-color: $introbg;
+  background-color: #20293b;
+  color: #ffffff;
+  padding: 30px 24px 24px 24px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px rgba(0,0,0,.3);
+
+  &--header {
+    text-align: center;
+    line-height: 30px;
+    p {
+      max-width: 500px;
+      margin: 20px auto;
+      line-height: 25px;
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+    #email {
+      padding: 15px 20px;
+      border-radius: 30px;
+      outline: none;
+      border: none;
+    }
+    button {
+      height: 45px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 20px;
+      background: linear-gradient(to right, $btn-tg, $btn-bg);
+      color: #ffffff;
+      font-weight: 700px;
+      cursor: pointer;
+      transition: all 0.7s ease-in-out;
+      font-family: $font-body;
+      &:hover {
+        background: linear-gradient(to right, $btn-bg, $btn-tg);
+      }
+    }
+    @include br(medium){
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      #email {
+        width: 400px;
+        padding: 0px 50px ;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        height: 50px;
+        margin-right: 25px;
+      }
+      button{
+        margin-top: 0px;
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.feature-base{
+  background-color: $mainbg;
+  padding: 50px 0px 100px 0;
+  font-family:$font-titels;
+
+  .feature-grid{
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    @include br(larg){
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: 0px auto;
+      gap: 90px 120px;
+    }
+
+    .feature{
+      height: 250px;
+      text-align: center;
+      margin: 15px;
+      img{
+        width: 100%;
+        max-width: 80px;
+        height: 80px;
+      }
+      &-title{
+        font-size: 1.5rem;
+        padding: 15px 0;
+        color: #feffef;
+        letter-spacing: 2px;
+      }
+      &-p{
+        font-size: 1rem;
+        color: #feffef;
+        padding: 10px 0;
+        max-width: 300px;
+        margin: 0 auto;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+}
